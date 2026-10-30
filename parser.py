@@ -18,7 +18,6 @@ TODAY_STR = f"DataExport_{date.today()}"
 # ╚══════════════════════════════════════════════════════════════╝
 
 # ╔═ Автопоиск свежей папки экспорта за сегодня ═╗
-  
   def find_latest_export():
     candidates = []
     if os.path.exists(BASE_PATH):
@@ -74,7 +73,7 @@ def parse_chat_export():
 
     my_id = None
     for f_id in senders_map:
-        if f_id != target_chat_name: # на всякий случай
+        if f_id != target_chat_name:
             my_id = f_id
             break
           
