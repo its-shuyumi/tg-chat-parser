@@ -83,7 +83,7 @@ def parse_chat_export():
         my_id = "unknown"
 
     data_buf = ""
-    with open("Chats.txt", 'w', encoding="utf-8") as w:
+    with open("result.txt", 'w', encoding="utf-8") as w:
         for message in messages:
             msg_id = message.get("id")
             if msg_id is None:
@@ -107,7 +107,7 @@ def parse_chat_export():
             else:
                 w.write(f'[{time}] {sender}: {text}\n')
 
-    print("\n✅ Успешно сохранено в Chats.txt")
+    print("\n✅ Успешно сохранено в result.txt")
 # ╚════════════════════════════════════════════╝
 
 
